@@ -1,0 +1,465 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.header,
+.footer{
+    background-color: #332208;
+
+}
+
+body {
+    color: #1b1818;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    /*font-family: 'Fira Sans', sans-serif;*/
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+
+}
+
+.menu__list {
+    display: flex;
+}
+
+.menu__btn{
+    display: none;
+}
+.menu__item a {
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FEFEFE;
+    margin: 0 15px;
+    padding-bottom: 5px;
+    transition: all .5s;
+    border-bottom: 1px solid transparent;
+}
+
+.menu__item a:hover {
+    border-bottom: 1px solid #FEFEFE;
+}
+
+.phone {
+    color: #FEFEFE;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.top__heading {
+    display: flex;
+    padding: 50px 0 30px;
+
+}
+
+.top__content {
+    text-align: center;
+    padding-top: 90px;
+    width: 50%;
+}
+
+.top__title {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 57px;
+    margin: 0 auto 20px;
+    max-width: 457px;
+}
+
+.top__text {
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0 auto 60px;
+    max-width: 470px;
+}
+
+.application-btn {
+    text-transform: uppercase;
+    color: #FEFEFE;
+    background-color: #C5AC2D;
+    padding: 16px 19px 15px;
+    transition: all .5s;
+    border: 1px solid transparent;
+    display: inline-block;
+}
+
+.application-btn:hover {
+    color: #C5AC2D;
+    background-color: #FEFEFE;
+    border: 1px solid #C5AC2D;
+}
+
+.top__slider {
+    width: 50%;
+    position: relative;
+
+}
+
+.slick-dots {
+    list-style: none;
+    text-align: center;
+
+}
+
+.slick-dots button {
+    font-size: 0;
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+}
+
+.slick-active button {
+    width: 16px;
+    height: 16px;
+}
+
+.top__slider .slick-dots {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.top__slider-text {
+    font-family: 'Fira Sans', sans-serif;
+    text-align: right;
+    padding-right: 100px;
+}
+
+.top__slider-text span + span {
+    padding-left: 12px;
+}
+
+.top__bottom {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.top__items {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.top__item {
+    border: 1px solid #1b1818;
+    width: 150px;
+    height: 150px;
+    align-items: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.top__item img {
+    margin-bottom: 10px;
+}
+
+.top__links {
+    padding-right: 80px;
+}
+
+.top__item:hover {
+    transform: scale(1.25);
+}
+
+.top__link {
+    border-bottom: 1px solid #1B1818;
+    color: #1B1818;
+}
+
+.top__link + .top__link {
+    margin-left: 20px;
+}
+
+.conditions__inner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
+
+.conditions__pannel {
+    text-align: left;
+    width: 300px;
+}
+
+.conditions__pannel-title {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+    color: #1b1818;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.conditions__pannel-text {
+    display: flex;
+    align-self: end;
+    margin-bottom: 20px;
+}
+
+.conditions__pannel-boldText {
+    margin-bottom:45px;
+}
+
+.rules {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 50px;
+}
+
+.rules__item {
+    width: 250px;
+    height: 350px;
+    border: 1px solid #332208;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    padding: 0 30px 10px;
+    transition: all .5s;
+}
+
+.rules__item:hover {
+    transform: scale(1.25);
+}
+
+.rules__item-number {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 96px;
+    line-height: 115px;
+    color: #1b1818;
+    font-weight: 500;
+    opacity: 0.05;
+}
+
+.rules__item-title {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: #1b1818;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.benefits{
+    padding: 100px 0;
+}
+.benefits__title{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+.benefits__items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.benefits__list{
+    width: 300px;
+}
+.benefits__list-item{
+    margin-bottom: 27px;
+    /*padding-right: 26px;*/
+    position: relative;
+    text-align: right;
+}
+.benefits__list-item:after{
+    content: '';
+    width: 16px;
+    height: 16px;
+    background-color:black;
+    border-radius: 50%;
+    position: absolute;
+    right: -25px;
+}
+.benefits__content{
+    width: 300px;
+}
+.benefits__list-item:nth-child(1),
+.benefits__list-item:nth-child(7){
+margin-right: 10px;
+}
+.benefits__list-item:nth-child(2),
+.benefits__list-item:nth-child(6){
+    margin-right: 60px;
+}
+.benefits__list-item:nth-child(3),
+.benefits__list-item:nth-child(5){
+    margin-right: 110px;
+}
+.benefits__list-item:nth-child(4){
+    margin-right: 160px;
+}
+.benefits__text{
+    margin-bottom: 30px;
+    text-align: right;
+}
+.video__popup{
+    background-color: #C5AC2D;
+    color:white;
+    text-transform: uppercase;
+    padding: 6px 34px 6px 64px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    float: right;
+}
+.video__popup:before{
+    content: "";
+    position: absolute;
+    background-image: url("../images/play.svg");
+    width: 25px;
+    height: 25px;
+    left:35px;
+    top:13px;
+}
+.reviews{
+    padding:100px 0;
+    background-color: #332208;
+    color: #fefefe;
+}
+.reviews__title{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 70px;
+}
+.review__item{
+    width: 270px;
+    min-height: 300px;
+    border: 1px solid #C5AC2D;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    margin-right: 30px;
+    cursor: grab;
+}
+.review__item-name{
+    margin:46px auto;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+}
+.review__item-text{
+    margin: 47px 30px;
+}
+.reviews__slider .slick-dots button{
+    background-color: #C5AC2D;
+    margin-right: 10px;
+    cursor: pointer;
+    line-height: 12px;
+}
+.reviews__slider .slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+.form{
+   padding:100px 0;
+}
+
+.form__inner{
+    display: flex;
+    justify-content: left;
+}
+.form__image{
+    width: 50%;
+}
+.form__block{
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    margin-left: 90px;
+    width:415px;
+
+}
+.form__block-title{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 5px;
+}
+.form__input{
+    display: block;
+    padding: 20px 0;
+    border:none;
+    border-bottom: 1px solid black;
+    margin-bottom: 50px;
+    outline: none;
+}
+.form__input::placeholder{
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.form__block-text{
+    margin-bottom: 30px;
+}
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 21px;
+
+}
+footer .application-btn{
+    cursor: pointer;
+}
+.footer{
+    padding: 100px 0 24px;
+}
+.footer__social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer__social-link{
+   margin: 0 15px;
+}
